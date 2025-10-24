@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网志愿者培训平台 - 首页</title>
+    <!-- 引入Tailwind CSS（无需本地下载，直接用CDN，新手友好） -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入自定义样式（可选，后续补充） -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- 平台Logo -->
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">志愿者培训平台</span>
+                </div>
+                <!-- 导航菜单 -->
+                <div class="flex items-center">
+                    <a href="index.html" class="px-3 py-2 text-gray-700 hover:text-blue-600">首页</a>
+                    <a href="./pages/courses.html" class="px-3 py-2 text-gray-700 hover:text-blue-600">课程中心</a>
+                    <a href="./pages/volunteer.html" class="px-3 py-2 text-gray-700 hover:text-blue-600">志愿者报名</a>
+                    <a href="./pages/about.html" class="px-3 py-2 text-gray-700 hover:text-blue-600">关于我们</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页轮播（简化版，用图片+文字） -->
+    <div class="relative bg-blue-500 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl font-extrabold mb-4">传承国学经典 · 培育志愿力量</h1>
+            <p class="text-xl mb-8">提供系统的传统文化培训与志愿服务技能指导，助力志愿者成长</p>
+            <a href="./pages/courses.html" class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100">查看课程</a>
+        </div>
+    </div>
+
+    <!-- 核心功能模块（3个卡片） -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 功能1：课程培训 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="text-blue-600 text-3xl mb-4">📚</div>
+                <h3 class="text-xl font-semibold mb-2">系统课程</h3>
+                <p class="text-gray-600">涵盖国学经典、志愿服务策划、沟通技巧等课程，满足不同需求</p>
+            </div>
+            <!-- 功能2：志愿者实践 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="text-blue-600 text-3xl mb-4">🤝</div>
+                <h3 class="text-xl font-semibold mb-2">实践机会</h3>
+                <p class="text-gray-600">对接社区、乡村实践项目，让志愿者将知识转化为实际服务</p>
+            </div>
+            <!-- 功能3：资源共享 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="text-blue-600 text-3xl mb-4">📖</div>
+                <h3 class="text-xl font-semibold mb-2">资源库</h3>
+                <p class="text-gray-600">提供课程PPT、经典读本、活动策划模板等免费资源</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>© 2025 互联网志愿者培训平台 版权所有</p>
+            <p class="mt-2 text-gray-400">联系邮箱：contact@volunteer-platform.com</p>
+        </div>
+    </footer>
+
+    <!-- 引入JS脚本（后续补充交互逻辑） -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
