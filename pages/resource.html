@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源库 - 互联网志愿者培训平台</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">志愿者培训平台</span>
+                </div>
+                <div class="flex items-center">
+                    <a href="../index.html" class="px-3 py-2 text-gray-700 hover:text-blue-600">首页</a>
+                    <a href="courses.html" class="px-3 py-2 text-gray-700 hover:text-blue-600">课程中心</a>
+                    <a href="volunteer.html" class="px-3 py-2 text-gray-700 hover:text-blue-600">志愿者报名</a>
+                    <a href="about.html" class="px-3 py-2 text-gray-700 hover:text-blue-600">关于我们</a>
+                    <a href="resource.html" class="px-3 py-2 text-blue-600 font-medium">资源库</a> <!-- 当前页高亮 -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面主体内容 -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- 页面标题 -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">志愿者资源库</h1>
+            <p class="text-gray-600 mt-2">免费获取课程PPT、经典读本、活动策划模板等资源</p>
+        </div>
+
+        <!-- 资源分类筛选 -->
+        <div class="mb-8 flex justify-center">
+            <select id="resource-filter" class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="all">全部资源</option>
+                <option value="ppt">课程PPT</option>
+                <option value="book">经典读本</option>
+                <option value="template">活动模板</option>
+            </select>
+        </div>
+
+        <!-- 资源列表 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 资源1：课程PPT -->
+            <div class="resource-card bg-white rounded-lg shadow-md overflow-hidden" data-type="ppt">
+                <img src="../assets/img/ppt1.jpg" alt="国学课程PPT" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-2">《论语》核心思想解读PPT</h3>
+                    <p class="text-gray-600 text-sm mb-3">完整课程PPT，含知识点解析、案例互动环节设计</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 font-medium">免费下载</span>
+                        <a href="#" class="text-sm text-blue-600 hover:underline">下载 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 资源2：经典读本 -->
+            <div class="resource-card bg-white rounded-lg shadow-md overflow-hidden" data-type="book">
+                <img src="../assets/img/book1.jpg" alt="国学经典读本" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-2">《国学经典选读》电子版</h3>
+                    <p class="text-gray-600 text-sm mb-3">精选《论语》《弟子规》等经典篇章，附现代文解读</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 font-medium">免费下载</span>
+                        <a href="#" class="text-sm text-blue-600 hover:underline">下载 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 资源3：活动模板 -->
+            <div class="resource-card bg-white rounded-lg shadow-md overflow-hidden" data-type="template">
+                <img src="../assets/img/template1.jpg" alt="活动策划模板" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-2">社区传统文化活动策划模板</h3>
+                    <p class="text-gray-600 text-sm mb-3">包含活动流程、物料清单、宣传方案等完整框架</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 font-medium">免费下载</span>
+                        <a href="#" class="text-sm text-blue-600 hover:underline">下载 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 资源4：课程PPT -->
+            <div class="resource-card bg-white rounded-lg shadow-md overflow-hidden" data-type="ppt">
+                <img src="../assets/img/ppt2.jpg" alt="沟通技巧PPT" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-2">志愿服务沟通技巧PPT</h3>
+                    <p class="text-gray-600 text-sm mb-3">含场景模拟、案例分析、实用工具等内容</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-600 font-medium">免费下载</span>
+                        <a href="#" class="text-sm text-blue-600 hover:underline">下载 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 px-4 mt-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>© 2025 互联网志愿者培训平台 版权所有</p>
+            <p class="mt-2 text-gray-400">联系邮箱：contact@volunteer-platform.com</p>
+        </div>
+    </footer>
+
+    <!-- 引入筛选功能的JS代码 -->
+    <script src="../assets/js/resource-filter.js"></script>
+</body>
+</html>
